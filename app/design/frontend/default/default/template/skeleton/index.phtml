@@ -1,0 +1,22 @@
+<!--
+/**
+ * @category    CY
+ * @package     CY_Skeleton
+ * @author      richard@codingyurrah.com
+ */
+-->
+<p>Coding Yurrah - Skeleton</p>
+
+<p>
+    This page has been hit <?php echo $this->getHitCount(); ?> times.
+</p>
+
+<?php
+foreach ($this->getSkeletonCollection() as $row):
+?>
+<p>
+    Id: <?php echo $row->getId(); ?>, Hit Count: <?php echo $row->getHitCount(); ?>, Random Text: <?php echo $row->getRandomText(); ?>, Created At: <?php echo Mage::helper('skeleton')->formatDate($row->getCreatedAt()); ?>
+</p>
+<?php
+endforeach;    
+?>

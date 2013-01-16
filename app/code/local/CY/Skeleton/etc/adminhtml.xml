@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    CY
+ * @package     CY_Skeleton
+ * @author      richard@codingyurrah.com
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <skeleton translate="title" module="skeleton">
+                                        <title>Skeleton Section</title>
+                                    </skeleton>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>    
+           </admin>
+       </resources>
+    </acl>
+</config>

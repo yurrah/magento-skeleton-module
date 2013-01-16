@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    CY
+ * @package     CY_Skeleton
+ * @author      richard@codingyurrah.com
+ */
+-->
+<config>
+    <modules>
+        <CY_Skeleton>
+            <version>1.0</version>
+        </CY_Skeleton>
+    </modules>
+    
+    <global>
+        <blocks>
+            <skeleton>
+                <class>CY_Skeleton_Block</class>
+            </skeleton>
+        </blocks>
+        
+        <helpers>
+            <skeleton>
+                <class>CY_Skeleton_Helper</class>
+            </skeleton>
+        </helpers>
+        
+        <models>
+            <skeleton>
+                <class>CY_Skeleton_Model</class>
+                <resourceModel>skeleton_resource</resourceModel>
+            </skeleton>
+            
+            <skeleton_resource>
+                <class>CY_Skeleton_Model_Resource</class>
+                <entities>
+                    <bones>
+                        <table>skeleton_bones</table>
+                    </bones>
+                </entities>
+            </skeleton_resource>
+        </models>
+        
+        <resources>
+            <skeleton_setup>
+                <setup>
+                    <module>CY_Skeleton</module>
+                    <class>CY_Skeleton_Model_Resource_Setup</class>
+                </setup>
+            </skeleton_setup>
+        </resources>
+    </global>
+    
+    <frontend>
+        <routers>
+            <skeleton>
+                <use>standard</use>
+                <args>
+                    <module>CY_Skeleton</module>
+                    <frontName>skeleton</frontName>
+                </args>
+            </skeleton>
+        </routers>
+        
+        <layout>
+            <updates>
+                <skeleton module="CY_Skeleton">
+                    <file>skeleton.xml</file>
+                </skeleton>
+            </updates>
+        </layout>
+    </frontend>
+    
+    <default>
+        <skeleton>
+            <skeleton_options>
+                <record_page_hit>1</record_page_hit>
+                <number_of_collection_results>0</number_of_collection_results>
+                <email_address>admin@codingyurrah.com</email_address>
+            </skeleton_options>
+        </skeleton>
+    </default>
+</config>

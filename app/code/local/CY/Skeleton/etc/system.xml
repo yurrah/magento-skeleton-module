@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    CY
+ * @package     CY_Skeleton
+ * @author      richard@codingyurrah.com
+ */
+-->
+<config>
+    <tabs>
+        <codingyurrah translate="label">
+            <label>Coding Yurrah</label>
+            <sort_order>1000</sort_order>
+        </codingyurrah>
+    </tabs>
+    
+    <sections>
+        <skeleton translate="label" module="skeleton">
+            <label>Skeleton Configuration</label>
+            <tab>codingyurrah</tab>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            
+            <groups>
+                <skeleton_options translate="label">
+                    <label>Skeleton Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <record_page_hit translate="label">
+                            <label>Record Page Hit</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </record_page_hit>
+                        
+                        <number_of_collection_results translate="label">
+                            <label>Number of Collection Results</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>skeleton/source_collectionLimit</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>How many records do you want to show on the page? 0 means unlimited.</comment>
+                        </number_of_collection_results>
+                        
+                        <email_address translate="label">
+                            <label>Email Address</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </email_address>
+                    </fields>
+                </skeleton_options>
+            </groups>
+        </skeleton>    
+    </sections>
+</config>

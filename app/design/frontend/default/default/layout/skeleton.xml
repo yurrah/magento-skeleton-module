@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    CY
+ * @package     CY_Skeleton
+ * @author      richard@codingyurrah.com
+ */
+-->
+<layout version="0.1.0">
+    <skeleton_index_index translate="label">
+        <label>Skeleton Module</label>
+        <reference name="content">
+            <block type="skeleton/skeleton" name="skeleton" template="skeleton/index.phtml" />
+        </reference>
+    </skeleton_index_index>
+</layout>

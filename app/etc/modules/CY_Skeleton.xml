@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    CY
+ * @package     CY_Skeleton
+ * @author      richard@codingyurrah.com
+ */
+-->
+<config>
+    <modules>
+        <CY_Skeleton>
+            <active>true</active>
+            <codePool>local</codePool>
+        </CY_Skeleton>
+    </modules>
+</config>
